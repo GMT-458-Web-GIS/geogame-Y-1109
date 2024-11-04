@@ -92,12 +92,11 @@
 4. **Guess and Score**: After entering their guess, the user can click the "Guess" button to potentially earn points.
 
 
-
-
 ------------------------------------------------------
 |                     Country Hunt                     |
 |          Can you guess the country based on the clue?          |
 ------------------------------------------------------
+
 
 ------------------------------------------------------
 |                  Your clue will appear here!       |
