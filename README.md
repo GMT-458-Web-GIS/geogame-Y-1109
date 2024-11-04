@@ -27,10 +27,5 @@
 - **Input Field**: For the user to enter their guess.
 - **Score Display**: Shows the user's total score.
 
-## Setup
-To run this game on your local machine, follow these steps:
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
+
