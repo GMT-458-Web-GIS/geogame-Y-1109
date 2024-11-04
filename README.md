@@ -28,10 +28,6 @@
 - **Score Display**: Shows the user's total score.
 
 
-# Country Hunt
-
-## Game Description
-"Country Hunt" is an interactive quiz game where users are provided with a random geographical clue to guess the correct country. Players will try to identify which country is represented based on the given hint. Correct guesses will earn points.
 
 ## Main Screen Design
 
@@ -108,7 +104,7 @@
 ------------------------------------------------------
 
 ------------------------------------------------------
-|                     [ Leaflet Harita ]             |
+|                     [ Leaflet Map ]               |
 ------------------------------------------------------
 
 ------------------------------------------------------
