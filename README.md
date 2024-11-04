@@ -1,7 +1,7 @@
-# Guess the Country
+# Country Hunt
 
 ## Game Description
-"Guess the Country" is an interactive quiz game that provides users with a random geographical clue, allowing them to guess the correct country. Players will try to identify which country is represented based on the given hint. Correct guesses will earn points.
+"Country Hunt" is an interactive quiz game that provides users with a random geographical clue, allowing them to guess the correct country. Players will try to identify which country is represented based on the given hint. Correct guesses will earn points.
 
 ## Requirements
 - A system to present random clues to users.
@@ -34,4 +34,3 @@ To run this game on your local machine, follow these steps:
    ```bash
    git clone https://github.com/username/repo-name.git
    cd repo-name
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ATV5e7Id)
