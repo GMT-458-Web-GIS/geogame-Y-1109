@@ -1,120 +1,81 @@
-# Country Hunt
+# INTERCOUNTRY
 
-## Game Description
-"Country Hunt" is an interactive quiz game that provides users with a random geographical clue, allowing them to guess the correct country. Players will try to identify which country is represented based on the given hint. Correct guesses will earn points.
+INTERCOUNTRY is a fun and educational map-based guessing game focused on geographic knowledge and map interaction. Players attempt to find the intersection point of three given countries. The game provides active interaction with the map and tests players' knowledge of geography.
 
-## Requirements
-- A system to present random clues to users.
-- A mechanism to check user guesses.
-- A user interface that provides scoring and feedback.
-- Mobile-responsive design.
+## Project Introduction
 
-## Technologies Used
-- **HTML**: For creating the game interface and structure.
-- **CSS**: For styling and designing the game.
-- **JavaScript**: For game logic, user interaction, and scoring.
-- **Leaflet**: For map-based interactions and visualizing geographical clues.
+INTERCOUNTRY is a map-based game designed to educate players about geography. In this game, players must guess the correct country at the intersection point of the borders of three given countries. These countries are marked on the map as clues, and players must analyze their borders to find the correct country. If a player makes an incorrect guess, an error message is shown, and the game restarts.
 
-## Game Flow
-1. When the game starts, a random clue is displayed to the user.
-2. The user attempts to guess the correct country based on the clue.
-3. The user types their guess into the input field and clicks the "Guess" button.
-4. If the guess is correct, points are awarded; if incorrect, the correct answer is displayed.
-5. For each correct guess, a new clue is provided, and the game continues.
+This game is not only fun but also educational, encouraging users to interact with the map and improve their geography knowledge.
 
-## Game Interface
-- **Clue Area**: Displays the geographical information given to the user.
-- **Input Field**: For the user to enter their guess.
-- **Score Display**: Shows the user's total score.
+## Features
 
+- **Map Interaction**: Players will see the names of three countries marked on the map. Players will attempt to guess the correct country at the intersection of these three countries by interacting with the map.
+- **Timer**: A set time limit is given for each guess, and players must find the correct answer within that time.
+- **Complex Level Structure**: The difficulty level increases as the borders of the given countries become more complex, which keeps players engaged and attentive throughout the game.
+- **Dynamic Map**: With each level, the map and the given countries are dynamically updated.
 
+## How to Play?
 
-## Main Screen Design
+When players start the game, they will see the names of three different countries, which are marked on the map. The player must attempt to guess the correct country at the intersection of these three countries. After entering their guess, they click the "Submit Answer" button to submit their answer.
 
-### 1. Title Area
-- **Features**:
-  - The game name will be displayed in a large, bold font, centered on the screen.
-  - The background color may use a light shadow or gradient.
-  - Color palette: Light blue or green tones.
-- **Visual**:
-  - **Title**: "Country Hunt"
-  - **Subtitle**: "Can you guess the country based on the clue?"
+- **Correct Answer**: If the player guesses the correct country, they move on to the next level.
+- **Incorrect Answer**: If the answer is wrong, the message "Incorrect answer! Please try again." will appear.
+- **Timer**: Each level has a timer, and players must submit their answer before time runs out. When the time expires, a "Time's up!" message appears.
 
-### 2. Clue Area
-- **Features**:
-  - This area will display the geographical clue given to the user.
-  - The text box should be large enough for easy readability.
-  - It will be highlighted with a light color tone (e.g., light green).
-- **Visual**:
-  - **Clue Text**: "Your clue will appear here!"
+## Technologies
 
-### 3. Map Area
-- **Features**:
-  - An area integrated with the Leaflet library for a map display.
-  - The map will help users visually understand the geographical clues given.
-  - The map size should balance well with other components (e.g., height of 300px).
-- **Visual**:
-  - The map will initially show a general view of the world.
+This project uses the following technologies:
 
-### 4. Input Area
-- **Features**:
-  - A wide text box for users to enter their guesses.
-  - Designed to provide sufficient space around the input field for better user experience.
-- **Visual**:
-  - **Input Box**: with placeholder text "Enter your guess..."
+- **HTML**: For the structure and content of the page.
+- **CSS**: For styling the page.
+- **JavaScript**: For game logic and interactive features.
+- **Leaflet.js**: For map interaction and placing markers on the map.
 
-### 5. Guess Button
-- **Features**:
-  - A button for users to submit their guesses.
-  - The button color should be eye-catching (e.g., blue).
-  - The color will change on hover for visual feedback.
-- **Visual**:
-  - **Button**: "Guess"
+## Libraries Used
 
-### 6. Score Display
-- **Features**:
-  - An area that displays the user's total score.
-  - The score display should be clear and quick to inform the user of their current status.
-- **Visual**:
-  - "Your Score: 0"
+- **Leaflet.js**: A popular open-source library for creating interactive maps. It is used to implement features such as markers, click events, and zooming on the map.
+  
+- **HTML5, CSS3**: These technologies provide the basic building blocks for the webpage and the visual components of the game.
 
-### 7. Start Button
-- **Features**:
-  - A large and prominent button to start the game.
-  - This button should be immediately visible at the beginning of the game.
-- **Visual**:
-  - **Button**: "Start Game" with a green background.
+## Features and Implementations
 
-## Design Flow
-1. **Start**: When the user clicks the "Start Game" button, the game flow will begin.
-2. **Clue Display**: A geographical clue will be shown in the clue area when the game starts.
-3. **Map Interaction**: The Leaflet map will allow users to visualize geographical locations related to the clue.
-4. **Guess and Score**: After entering their guess, the user can click the "Guess" button to potentially earn points.
+### 1. **Three Event Handlers Implemented in the Repo**
 
+In this project, I used three main event handlers to facilitate player interaction:
 
-------------------------------------------------------
-|                     Country Hunt                     |
-|          Can you guess the country based on the clue?          |
-------------------------------------------------------
+- **Submit Answer Button**: When the player enters their answer and clicks the "Submit Answer" button, JavaScript is used to check the answer. If the answer is correct, the player progresses to the next level. If the answer is incorrect, an error message is displayed.
 
+- **Map Exploration**: Players can explore the map by interacting with it. This allows them to observe the regions where the correct countries are located. The map's click events make the process of identifying the correct country more interactive.
 
-------------------------------------------------------
-|                  Your clue will appear here!       |
-------------------------------------------------------
+- **Timer Expiry**: Each level includes a timer, which gives the player a limited amount of time to submit their answer. When the timer runs out, the message "Time's up!" is shown, and the player moves on to the next level.
 
-------------------------------------------------------
-|                     [ Leaflet Map ]               |
-------------------------------------------------------
+### 2. **How Closures (Scope) Were Used in the Project**
 
-------------------------------------------------------
-| [ Enter your guess...        ] [    Guess   ]     |
-------------------------------------------------------
+During the development of the project, I used closures to make certain functions more dynamic:
 
-------------------------------------------------------
-|               Your Score: 0                         |
-------------------------------------------------------
+- **Timer and Score Tracking**: For each game level, a timer is started, and this timer uses closures to hold specific variables for each level. This allows the game to manage the time and score data separately for each level.
 
-------------------------------------------------------
-|                       [ Start Game ]                |
-------------------------------------------------------
+- **Map Interaction and Dynamic Displays**: The map is shown interactively with the three countries for each level. The countries are displayed on the map as clues. Using JavaScript, the map is dynamically updated for each level, and closures are used to manage the display and interaction logic. As the player progresses through the game, the map and clues are updated accordingly.
 
+### 3. **AI Interaction (ChatGPT, Gemini, etc.)**
+
+I learned a lot from AI, particularly from ChatGPT, about game design and map interaction. ChatGPT helped me understand how to add interactive elements on the map, dynamically show user feedback, and use JavaScript to handle map marker placement.
+
+**AI Interaction Link**: [ChatGPT Interaction](https://chatgpt.com/share/6755fdac-6858-8011-b639-ea9d1eed1e8e)
+
+### 4. **DOM Interaction**
+
+In my project, I heavily interacted with the DOM to provide user feedback and manipulate visual markers on the map.
+
+- **Message Updates**: As players provide correct or incorrect answers, I dynamically update the message element in the DOM. These messages guide the player and prepare them for the next level of the game.
+  
+- **Map Markers**: For each level, the three countries are shown as clues on the map. This is done by manipulating the DOM elements representing the map using the Leaflet.js library.
+
+### 5. **Game Interactivity / Complexity / Fun**
+
+- **Interaction and Fun Gameplay**: Players try to guess the correct country at the intersection of the three countries. The map provides visual information about the countries, and the process of making the correct guess encourages players to actively review the map. This continuous interaction keeps the players engaged and requires them to be more attentive.
+
+- **Complexity**: As the game progresses, the difficulty level increases, with the countries' borders becoming more complex. This challenges players' attention and knowledge as they advance through the game.
+  
+- **Fun**: Every correct guess rewards the player, while incorrect answers encourage them to try again. The time limit adds excitement to the gameplay, keeping it engaging and dynamic.
