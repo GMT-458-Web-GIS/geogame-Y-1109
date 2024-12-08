@@ -1,5 +1,7 @@
 # INTERCOUNTRY
 
+## MY GEOGAME LİNK : https://gmt-458-web-gis.github.io/geogame-Y-1109/ 
+
 INTERCOUNTRY is a fun and educational map-based guessing game focused on geographic knowledge and map interaction. Players attempt to find the intersection point of three given countries. The game provides active interaction with the map and tests players' knowledge of geography.
 
 ## Project Introduction
