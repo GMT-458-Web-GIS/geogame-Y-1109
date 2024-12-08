@@ -2,6 +2,8 @@
 
 ## MY GEOGAME LİNK : https://gmt-458-web-gis.github.io/geogame-Y-1109/ 
 
+## Yağız Özkaya - 2200674057
+
 ![My Game Logo](https://github.com/GMT-458-Web-GIS/geogame-Y-1109/raw/main/img.png)
 
 
