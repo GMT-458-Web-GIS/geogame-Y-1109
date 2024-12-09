@@ -1,6 +1,6 @@
 # INTERCOUNTRY
 
-## **Geography Game Connection**  
+## **MY GEOGAME LİNK**  
 [**https://gmt-458-web-gis.github.io/geogame-Y-1109/**](https://gmt-458-web-gis.github.io/geogame-Y-1109/)
 
 ## **Yağız Özkaya - 2200674057**
