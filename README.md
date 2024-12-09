@@ -1,88 +1,83 @@
 # INTERCOUNTRY
 
-## MY GEOGAME LİNK : https://gmt-458-web-gis.github.io/geogame-Y-1109/ 
+## **Geography Game Connection**  
+[**https://gmt-458-web-gis.github.io/geogame-Y-1109/**](https://gmt-458-web-gis.github.io/geogame-Y-1109/)
 
-## Yağız Özkaya - 2200674057
+## **Yağız Özkaya - 2200674057**
 
-![My Game Logo](https://github.com/GMT-458-Web-GIS/geogame-Y-1109/raw/main/img.png)
+![Game Logo](https://github.com/GMT-458-Web-GIS/geogame-Y-1109/raw/main/img.png)
 
+---
 
-INTERCOUNTRY is a fun and educational map-based guessing game focused on geographic knowledge and map interaction. Players attempt to find the intersection point of three given countries. The game provides active interaction with the map and tests players' knowledge of geography.
+## **Project Introduction**
 
-## Project Introduction
+**INTERCOUNTRY** is a map-based trivia game designed to test your geography knowledge in an educational and entertaining way. Players aim to find the intersection point of three given countries. Active interaction with the map allows players to enhance their geographic understanding while enjoying an engaging game experience.
 
-INTERCOUNTRY is a map-based game designed to educate players about geography. In this game, players must guess the correct country at the intersection point of the borders of three given countries. These countries are marked on the map as clues, and players must analyze their borders to find the correct country. If a player makes an incorrect guess, an error message is shown, and the game restarts.
+In the game, players analyze the boundaries of the three given countries on the map and try to identify the country at their intersection. A wrong guess triggers an error message, and the game continues with a new set of countries. Players have a total of **120 seconds** to make as many correct guesses as possible. The game ends when the time runs out, and the final score is displayed.
 
-This game is not only fun but also educational, encouraging users to interact with the map and improve their geography knowledge.
+---
 
-## Features
+## **Features**
 
-- **Map Interaction**: Players will see the names of three countries marked on the map. Players will attempt to guess the correct country at the intersection of these three countries by interacting with the map.
-- **Timer**: A set time limit is given for each guess, and players must find the correct answer within that time.
-- **Complex Level Structure**: The difficulty level increases as the borders of the given countries become more complex, which keeps players engaged and attentive throughout the game.
-- **Dynamic Map**: With each level, the map and the given countries are dynamically updated.
+- **Map Interaction**: Players see the names of three countries and analyze their borders to find the correct country at their intersection.
+- **Time Limit**: Players have a total of **120 seconds** to make as many correct guesses as possible.
+- **Educational and Entertaining Experience**: The game improves players’ geographic knowledge while providing a fun and challenging experience.
 
-## How to Play?
+---
 
-When players start the game, they will see the names of three different countries, which are marked on the map. The player must attempt to guess the correct country at the intersection of these three countries. After entering their guess, they click the "Submit Answer" button to submit their answer.
+## **How to Play**
 
-- **Correct Answer**: If the player guesses the correct country, they move on to the next level.
-- **Incorrect Answer**: If the answer is wrong, the message "Incorrect answer! Please try again." will appear.
-- **Timer**: Each level has a timer, and players must submit their answer before time runs out. When the time expires, a "Time's up!" message appears.
+1. When the game starts, the names of three countries are displayed on the screen.
+2. Players must identify the country located at the intersection of these three borders.
+3. Once a guess is made, players click the **"Submit Answer"** button.
+4. Players aim to score as many points as possible within the total **120-second** time limit.
 
-## Technologies
+- **Correct Answer**: If the player guesses correctly, they earn points and move to the next set of countries.
+- **Incorrect Answer**: If the answer is incorrect, an error message—**"Wrong answer! Please try again."**—is displayed, and a new set of countries is provided.
+- **Time Expiry**: The game ends when the time runs out, and the total score is shown on the screen.
 
-This project uses the following technologies:
+---
 
-- **HTML**: For the structure and content of the page.
-- **CSS**: For styling the page.
+## **Technologies Used**
+
+- **HTML**: For structuring the webpage.
+- **CSS**: For styling and layout.
 - **JavaScript**: For game logic and interactive features.
-- **Leaflet.js**: For map interaction and placing markers on the map.
+- **Leaflet.js**: For map visualization and functionality.
 
-## Libraries Used
+---
 
-- **Leaflet.js**: A popular open-source library for creating interactive maps. It is used to implement features such as markers, click events, and zooming on the map.
-  
-- **HTML5, CSS3**: These technologies provide the basic building blocks for the webpage and the visual components of the game.
+## **Key Features and Implementations**
 
-## Features and Implementations
+### **1. Three Core Event Handlers**
 
-### 1. **Three Event Handlers Implemented in the Repo**
+- **Submit Answer Button**: Allows players to submit their guesses. Correct guesses earn points, while incorrect guesses trigger an error message and provide a new set of countries.
+- **Map Exploration**: Players can explore the map to better understand geographic regions. The map serves as a static visual aid for the game.
+- **Timer**: A global countdown of **120 seconds** starts when the game begins. The game ends when the timer hits zero, and the total score is displayed.
 
-In this project, I used three main event handlers to facilitate player interaction:
+---
 
-- **Submit Answer Button**: When the player enters their answer and clicks the "Submit Answer" button, JavaScript is used to check the answer. If the answer is correct, the player progresses to the next level. If the answer is incorrect, an error message is displayed.
+### **2. Use of Closures**
 
-- **Map Exploration**: Players can explore the map by interacting with it. This allows them to observe the regions where the correct countries are located. The map's click events make the process of identifying the correct country more interactive.
+- **Time and Score Tracking**: A single global timer is used for the game. Closures are employed to manage the total time (**120 seconds**) and dynamically update the player's total score.
+- **Map Support**: The map serves as a static visual aid throughout the game. It does not dynamically update markers with each level.
 
-- **Timer Expiry**: Each level includes a timer, which gives the player a limited amount of time to submit their answer. When the timer runs out, the message "Time's up!" is shown, and the player moves on to the next level.
+---
 
-### 2. **How Closures (Scope) Were Used in the Project**
+### **3. AI-Assisted Development**
 
-During the development of the project, I used closures to make certain functions more dynamic:
+Tools like ChatGPT provided significant support in designing the game and implementing map interactions. Specifically, they assisted in optimizing JavaScript code and refining the game's flow.
 
-- **Timer and Score Tracking**: For each game level, a timer is started, and this timer uses closures to hold specific variables for each level. This allows the game to manage the time and score data separately for each level.
+---
 
-- **Map Interaction and Dynamic Displays**: The map is shown interactively with the three countries for each level. The countries are displayed on the map as clues. Using JavaScript, the map is dynamically updated for each level, and closures are used to manage the display and interaction logic. As the player progresses through the game, the map and clues are updated accordingly.
+### **4. DOM Interactions**
 
-### 3. **AI Interaction (ChatGPT, Gemini, etc.)**
+- **Message Updates**: Dynamic messages are displayed on the DOM when players submit correct or incorrect answers, guiding them through the game.
+- **Map Visualization**: The map is a static component used to help players analyze regions and make educated guesses. It does not display specific markers for each set of countries.
 
-I learned a lot from AI, particularly from ChatGPT, about game design and map interaction. ChatGPT helped me understand how to add interactive elements on the map, dynamically show user feedback, and use JavaScript to handle map marker placement.
+---
 
-**AI Interaction Link**: [ChatGPT Interaction](https://chatgpt.com/share/6755fdac-6858-8011-b639-ea9d1eed1e8e)
+### **5. Game Dynamics**
 
-### 4. **DOM Interaction**
-
-In my project, I heavily interacted with the DOM to provide user feedback and manipulate visual markers on the map.
-
-- **Message Updates**: As players provide correct or incorrect answers, I dynamically update the message element in the DOM. These messages guide the player and prepare them for the next level of the game.
-  
-- **Map Markers**: For each level, the three countries are shown as clues on the map. This is done by manipulating the DOM elements representing the map using the Leaflet.js library.
-
-### 5. **Game Interactivity / Complexity / Fun**
-
-- **Interaction and Fun Gameplay**: Players try to guess the correct country at the intersection of the three countries. The map provides visual information about the countries, and the process of making the correct guess encourages players to actively review the map. This continuous interaction keeps the players engaged and requires them to be more attentive.
-
-- **Complexity**: As the game progresses, the difficulty level increases, with the countries' borders becoming more complex. This challenges players' attention and knowledge as they advance through the game.
-  
-- **Fun**: Every correct guess rewards the player, while incorrect answers encourage them to try again. The time limit adds excitement to the gameplay, keeping it engaging and dynamic.
+- **Challenge and Fun**: Players analyze boundaries and intersections to find the correct country, making for an educational yet entertaining experience.
+- **Excitement and Competition**: Players strive to make as many correct guesses as possible within the **120-second** limit. Each correct guess provides a sense of achievement, while incorrect guesses motivate players to try again.
