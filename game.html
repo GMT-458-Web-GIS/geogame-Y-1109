@@ -5,38 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERCOUNTRY - Oyun</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Leaflet CSS ve JS -->
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1>INTERCOUNTRY</h1>
-            <p>Try to find the neighboring country in 120 seconds!</p>
-            <div id="timer">120</div>
-            <div class="question">
-                <p id="countries">countries: <span id="country1">TÜRKİYE</span>, <span id="country2">SURİYE</span>, <span id="country3">IRAK</span></p>
-                <label for="answer">Guess:</label>
-                <input type="text" id="answer" placeholder="Enter the country" style="text-transform: uppercase;">
-                <button class="btn" id="submit-btn">Gönder</button>
+        <div class="game">
+            <h1 class="game-title">INTERCOUNTRY</h1>
+            <div id="map" style="height: 400px;"></div> 
+            <div class="info">
+                <p id="timer">Time: 120</p> 
+                <p id="score">Score: 0</p> 
+                <p id="countries">Countries: </p> 
             </div>
-            <div id="score">Puan: 0</div>
-            <div id="map" style="height: 400px; margin-top: 20px;"></div>
+            <div id="options" class="options-container"></div> 
         </div>
     </div>
-    <script src="game.js"></script>
-    <script>
-        
-        const map = L.map('map').setView([39.9334, 35.2454], 5); 
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
 
-        
-        L.marker([39.9334, 35.2454]).addTo(map)
-            .bindPopup("Here is a country: Türkiye")
-            .openPopup("");
-    </script>
+    <script src="game.js"></script>
 </body>
 </html>
