@@ -8,49 +8,50 @@
 ![Game Logo](https://github.com/GMT-458-Web-GIS/geogame-Y-1109/raw/main/img.png)
 
 ---
-
 ## Project Description
-**INTERCOUNTRY** is a fun and educational map-based game. The objective of the game is to identify the correct country that shares borders with three neighboring countries presented to the player. Each correct answer earns points, and the player can score a maximum of 40 points within 120 seconds. The game ends either when the player runs out of time or provides an incorrect answer.
+**INTERCOUNTRY** is a fun and educational map-based game. The objective of the game is to guess the country that shares borders with the three countries given to the player. Each correct answer earns the player points, and the player can score a maximum of 40 points within 120 seconds. The game ends either when the time runs out or when the player answers incorrectly.
 
-## How to Play
-1. **Start**: The game begins with two buttons: "How to Play?" and "Start Game."
-2. **Timer**: A 120-second countdown starts as soon as the game begins.
-3. **Question**: Three neighboring countries are shown, and the player must guess the country that shares borders with all three of them.
-4. **Options**: Randomly generated answer choices are provided. A point is awarded for each correct answer, and a new set of countries will appear.
-5. **Time Limit**: If all questions are answered correctly before time runs out, the player wins. If the player answers incorrectly or time runs out, the game ends.
+## How to Play?
+1. **Starting the Game**: The game begins with the display of the "INTERCOUNTRY" title at the top of the screen. Below this, there are two buttons: "How to Play?" and "Start Game". Players can click the "How to Play?" button to learn the rules of the game or click "Start Game" to begin playing.
+2. **Timer**: Once the game starts, a countdown timer of 120 seconds begins.
+3. **The Question**: Three neighboring countries will be shown, and the player must guess the country that shares a border with all three.
+4. **Options**: The correct country, along with random incorrect options, will be presented as answer choices. For each correct answer, the player earns one point and a new set of countries will be presented.
+5. **Time Limit**: If the player correctly answers all questions and completes the game within the time limit, they win. If they answer incorrectly or run out of time, the game ends.
 
 ## Game Features
-- **Map**: The game utilizes the Leaflet library to display a map, focusing on the relevant region for each question.
-- **Timer**: A 120-second timer counts down during the game.
-- **Options**: Answer choices are randomly generated, mixing correct and incorrect countries.
-- **Scoring System**: The player earns 1 point for each correct answer, with the total score displayed on the screen.
+- **Map**: The game uses the Leaflet library to display and manage the map. For each question, the map will focus on the region of the relevant country.
+- **Timer**: The player has 120 seconds to answer the questions, with the countdown updating every second.
+- **Answer Choices**: Answer options are randomly generated, including one correct answer and multiple incorrect ones.
+- **Scoring System**: The player earns one point for each correct answer, and their total score is displayed on the screen.
 
 ## Technologies Used
-- **HTML**: For the page structure.
-- **CSS**: For styling and page aesthetics.
-- **JavaScript**: For game logic, timer, map integration, and user interaction.
-- **Leaflet**: A library used for creating and managing the map.
+- **HTML**: Used to structure the game pages.
+- **CSS**: Used for styling the layout and design of the pages.
+- **JavaScript**: Used to implement game logic, the timer, map integration, and user interaction.
+- **Leaflet**: A JavaScript library for creating and managing interactive maps.
 
 ## Event Handlers Implemented
-1. **Timer Start**: The `startTimer()` function initializes and updates the timer every second. When the timer reaches zero, the game ends.
-2. **Answer Handling**: The `handleAnswer()` function checks the player's selected answer. If it's correct, the score increases, and the next question is loaded. If incorrect, the game ends.
-3. **Option Generation**: The `generateOptions()` function creates random answer choices, ensuring that the correct country is included and the options are shuffled.
+1. **Timer Start**: The `startTimer()` function initializes the countdown and updates the timer every second. When the timer reaches zero, the game ends.
+2. **Answer Validation**: The `handleAnswer()` function checks whether the player's selected answer is correct. If correct, the score increases and a new question is loaded. If incorrect, the game ends.
+3. **Generating Options**: The `generateOptions()` function creates a list of answer choices, including the correct answer and several random incorrect countries.
 
-## Benefits of Closures in the Project
-Closures are used in the project, particularly in the timer function (`startTimer()`) and the answer handling function. The `setInterval` function, which is used for the timer, interacts with external variables such as `timerElement` to update the time display dynamically. This closure allows for the proper functioning of the timer and ensures the game logic operates smoothly.
+## Benefits of Using Closures
+Closures are utilized in the project, especially in the `startTimer()` function and `handleAnswer()` function. The `setInterval` function interacts with external variables, such as `timerElement` to update the timer display and manages the countdown. These closures help ensure that the timer and game logic operate smoothly and correctly.
 
-## Learnings from AI (ChatGPT, Gemini, etc.)
-Interactions with AI technologies, especially ChatGPT, were helpful in understanding JavaScript functions and DOM manipulation. AI provided guidance on optimizing game logic, managing events, and solving technical issues related to the implementation. These interactions helped in writing more efficient and functional code.
+## AI Learning (ChatGPT, Gemini, etc.)
+AI technologies like ChatGPT assisted in learning JavaScript functions, DOM manipulation, and optimizing the game logic. AI guided the creation of essential game functions and ensured that the code was efficient and functional. These interactions played a significant role in improving the code and enhancing the game's functionality.
 
-AI Interaction URL: [[ChatGPT Interaction](https://chat.openai.com)](https://chatgpt.com/share/675a1dc3-b4d8-8011-b89a-ec9ffcb46cd4)
+AI Interaction URL: (https://chatgpt.com/share/675a1dc3-b4d8-8011-b89a-ec9ffcb46cd4)
 
-## Interaction with the DOM
-- **Map Updates**: The map is centered on a specific region based on the current question using the `map.setView()` function.
-- **Element Manipulation**: The game elements, such as the options container (`optionsContainer.innerHTML`) and score display (`scoreElement.textContent`), are dynamically updated as the game progresses.
-- **Event Listeners**: Event listeners are added to buttons using `addEventListener()` to capture user input and trigger functions when the player selects an answer.
+## DOM Interaction
+- **Map Updates**: The map view is updated for each new question, focusing on the region of the relevant country using the `map.setView()` function.
+- **Element Manipulation**: Game elements, such as the options container (`optionsContainer.innerHTML`) and score display (`scoreElement.textContent`), are dynamically updated as the game progresses.
+- **Event Listeners**: Event listeners are added to buttons, enabling them to trigger specific functions based on user interactions, such as selecting an answer.
 
-## Game Interactivity and Fun
-**INTERCOUNTRY** provides an interactive and engaging experience by incorporating a map-based interface with real-time player input. The time-limited nature of the game keeps players on their toes, while the randomized answer choices create a fresh experience with each game session. The game is not only fun but also educational, providing geographical knowledge as players learn about neighboring countries and borders.
+## Game Interaction and Fun Factor
+**INTERCOUNTRY** provides an engaging user experience with its map-based interface, while the time limit adds excitement and challenge. The random presentation of questions and answer choices ensures that each game session is unique. The game not only offers fun but also helps players improve their geographical knowledge.
 
-The combination of strategic thinking, geography knowledge, and time pressure makes the game both challenging and enjoyable. With each correct answer, players are motivated to continue, and the score system adds a competitive element to the game.
+The time constraint and the pressure to answer correctly create an exciting atmosphere. Each correct answer motivates the player to keep going and provides a sense of accomplishment. The scoring system tracks progress, creating a competitive edge and making the game more enjoyable.
+
+---
 
